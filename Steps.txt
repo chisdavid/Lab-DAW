@@ -1,0 +1,20 @@
+1.   Install MySqlWorkbench
+	-> you will have to set a password, this password we will use for conncetion between Server and Database (Do not forget it)
+
+2.   Open MySqlWorkbench + Create Conncection + Create database using command create database "DatabaseName"
+       Example ->  create database test
+
+3.   Clone the Spring Project from https://github.com/chisdavid/Lab-DAW.git
+
+4.   Open the project in Inteliji.
+
+5.   Go to ./src/main/resources/application.properties and set your specific configuration
+     PORT / IP / USER / Password / DatabaseName
+
+6.   Run the project
+
+7.   Add the database configuration in Inteliji (Optional)
+
+8.   Test the Methods from controllers using Postman API
+
+9.   Create your own DB and CRUD Methods for each table.
