@@ -2,9 +2,13 @@ package com.example.Backend.Model;
 
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.Id;
-import jakarta.persistence.Table;
-import lombok.*;
+import jakarta.persistence.OneToMany;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
 
 @Entity
 @NoArgsConstructor
@@ -14,4 +18,7 @@ public class Person {
     private Long id;
     private String name;
     private Integer age;
+
+    @OneToMany(fetch = FetchType.EAGER)
+    private List<Car> cars;
 }
