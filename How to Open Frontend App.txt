@@ -1,0 +1,5 @@
+1. Go To myapp folder
+2. Open Terminal
+3. Type npm install
+4. Open Folder in VSCode
+5. Type npm start
