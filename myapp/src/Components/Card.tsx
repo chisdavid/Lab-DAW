@@ -13,9 +13,8 @@ import Typography from '@mui/material/Typography';
 import { red } from '@mui/material/colors';
 import { ICardProps } from './Card.types';
 
-
-export const CustomCard = (props: ICardProps):JSX.Element =>{
-    return   <Card sx={{ maxWidth: 345 }}>
+export const CustomCard = (props: ICardProps): JSX.Element => {
+  return <Card sx={{ maxWidth: 345 }}>
     <CardHeader
       avatar={
         <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
@@ -38,7 +37,7 @@ export const CustomCard = (props: ICardProps):JSX.Element =>{
     />
     <CardContent>
       <Typography variant="body2" color="text.secondary">
-     {props.description}
+        {props.description}
       </Typography>
     </CardContent>
     <CardActions disableSpacing>
@@ -48,10 +47,10 @@ export const CustomCard = (props: ICardProps):JSX.Element =>{
       <IconButton aria-label="share">
         <ShareIcon />
       </IconButton>
-   
+
     </CardActions>
     <Collapse in={true} timeout="auto" unmountOnExit>
-     
+
     </Collapse>
   </Card>
 }

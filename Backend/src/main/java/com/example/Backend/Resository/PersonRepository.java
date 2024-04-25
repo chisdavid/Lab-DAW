@@ -9,4 +9,5 @@ import java.util.List;
 public interface PersonRepository extends CrudRepository<Person,Long > {
     Person findFirstById(Long id);
     List<Person> findByAge(Integer age);
+    Person findByEmailAndPassword(String email, String password);
 }
